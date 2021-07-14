@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Covid-19 Screening</title>
+    <link rel="shortcut icon" href="./logo.png">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1>COVID-19 Screening Questions</h1>
+    <form>
+        <div class="container">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="inputFullName">
+        </div>
+
+        <ol>
+            <li>
+                Are you currently experiencing one or more of the symptoms below that are new or worsening? Symptoms should not be chronic or related to other known causes or conditions.
+            </li>
+
+            <p>Do you have any of the following new or worsening symtoms or signs? Symptoms should not be chronic or related to other known causes or conditions. </p>
+            <input type="checkbox" id="yes" name="yes" value="Yes">
+            <label for="vehicle1">  Yes</label><br>
+            <input type="checkbox" id="noToAll" name="noToAll" value="No to all">
+            <label for="vehicle2"> No to all</label><br><br>
+
+            <ul>
+                <li>
+                    Fever and/or chills -  Temperature of 37.8 degrees Celsius/100 degrees Fahrenheit or higher
+                </li>
+                <li>
+                    Cough or barking cough (croup) - Not related to asthma, post-infectious reactive airways, COPD, or other known causes or conditions you alreadyhave
+                </li>
+                <li>
+                    Shortness of breath - Not related to asthma or other known causes or condition you already have
+                </li>
+            </ul> <br>
+
+            <li>
+                Has a doctor, health care provider, or public health unit told you that you should currently be isolating (staying at home)?
+                This can be because of an outbreak or contact tracing
+            </li>
+            <input type="checkbox" id="yes" name="yes" value="Yes">
+            <label for="vehicle1">  Yes</label><br>
+            <input type="checkbox" id="no" name="no" value="No">
+            <label for="vehicle2"> No</label><br><br>
+
+        </ol><br>               
+        <button type="submit" class="btn btn-primary">Submit</button><br>
+      </form>
+      <button class="form__button" type="logout"> Logout</button>
+</body>
+</html>
